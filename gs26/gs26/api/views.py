@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-
 # Create your views here.
 from .models import student
 from .serializers import StudentSerializers
@@ -13,8 +12,4 @@ class StudentModelViewSet(viewsets.ModelViewSet):
     serializer_class=StudentSerializers
     # authentication_classes=[SessionAuthenticationAuthentication]
     # permission_classes=[IsAuthenticated]
-
-
-
    
-
